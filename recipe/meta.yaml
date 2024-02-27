@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: pytest-mypy-testing
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pytest-mypy-testing/pytest-mypy-testing-{{ version }}.tar.gz
-  sha256: 31b1b8ec869b2029b2e15ba9913c7dc089b6197626efd559d6e3c5e763a0725e
+  sha256: 088fad29bcdcf04a307cbe818ef99c5206762a21bbdfc4a09d846549221c0b4f
 
 build:
   noarch: python
@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
     - pip
-  run:
     - python >=3.7
-    - pytest >=7,<8
-    - mypy >=0.931
+  run:
+    - mypy >=1.0
+    - pytest >=7,<9
+    - python >=3.7
 
 test:
   source_files:
