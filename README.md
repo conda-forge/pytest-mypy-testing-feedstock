@@ -3,11 +3,13 @@ About pytest-mypy-testing-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-mypy-testing-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/davidfritzsche/pytest-mypy-testing
+Home: https://pypi.org/project/pytest-mypy-testing
 
 Package license: Apache-2.0
 
 Summary: Pytest plugin to check mypy output.
+
+Development: https://github.com/davidfritzsche/pytest-mypy-testing
 
 Current build status
 ====================
