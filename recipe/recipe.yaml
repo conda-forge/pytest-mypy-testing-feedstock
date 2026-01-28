@@ -45,8 +45,8 @@ tests:
         - coverage
         - python ${{ python_min }}.*
     script:
-      - coverage run --source=pytest_mypy_testing -m pytest tests mypy_tests --doctest-modules -p no:mypy-testing -k "not test_iter_comments"
-      - coverage report --show-missing --skip-covered --fail-under=97
+      - coverage run --source=pytest_mypy_testing -m pytest -vv --tb=long --color=yes tests mypy_tests --doctest-modules -p no:mypy-testing
+      - coverage report --show-missing --skip-covered --fail-under=99
 
 about:
   summary: Pytest plugin to check mypy output.
